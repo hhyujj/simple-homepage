@@ -3,63 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FinTechFlow – Smarter Financial Tools</title>
+  <title>Premier League Teams</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    ::placeholder {
+      color: #9ca3af;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-100 text-gray-800">
 
   <!-- Header -->
-  <header class="flex justify-between items-center p-6 bg-white shadow-md">
-    <h1 class="text-2xl font-bold text-indigo-600">FinTechFlow</h1>
-    <nav class="space-x-6 hidden md:flex">
-      <a href="#" class="hover:text-indigo-600">Features</a>
-      <a href="#" class="hover:text-indigo-600">Pricing</a>
-      <a href="#" class="hover:text-indigo-600">Docs</a>
-      <a href="#" class="hover:text-indigo-600">Login</a>
-    </nav>
-    <a href="#" class="md:inline-block hidden bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-indigo-700 transition">Get Started</a>
+  <header class="bg-purple-800 text-white text-center py-6 shadow-md">
+    <h1 class="text-3xl font-bold">Premier League Teams</h1>
+    <p class="text-sm mt-1">Season 2025</p>
   </header>
 
-  <!-- Hero Section -->
-  <section class="text-center py-24 bg-gradient-to-br from-indigo-600 to-blue-500 text-white">
-    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Smarter Tools for Modern Finance</h2>
-    <p class="text-lg md:text-xl mb-8">Automate, analyze, and accelerate your business finance with ease.</p>
-    <a href="#" class="bg-white text-indigo-700 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition">Start Free Trial</a>
-  </section>
+  <!-- Search Box -->
+  <div class="flex justify-center mt-8 mb-6 px-4">
+    <input 
+      type="text" 
+      id="searchInput" 
+      placeholder="Search by team name..." 
+      class="w-full max-w-md px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+    />
+  </div>
 
-  <!-- Features -->
-  <section class="py-20 px-6 md:px-12">
-    <div class="text-center mb-16">
-      <h3 class="text-3xl font-bold mb-4">What You Get</h3>
-      <p class="text-gray-600">Everything you need to manage your business finances – all in one place.</p>
-    </div>
-    <div class="grid md:grid-cols-3 gap-12">
-      <div class="bg-white p-6 rounded-xl shadow-md">
-        <h4 class="text-xl font-semibold mb-2">Automated Invoicing</h4>
-        <p class="text-gray-600">Save time with intelligent billing and recurring payment features.</p>
-      </div>
-      <div class="bg-white p-6 rounded-xl shadow-md">
-        <h4 class="text-xl font-semibold mb-2">Real-Time Analytics</h4>
-        <p class="text-gray-600">Track cash flow, profit, and performance in real time with powerful dashboards.</p>
-      </div>
-      <div class="bg-white p-6 rounded-xl shadow-md">
-        <h4 class="text-xl font-semibold mb-2">Secure Integrations</h4>
-        <p class="text-gray-600">Connect seamlessly with banks, accounting tools, and APIs – all secured.</p>
-      </div>
-    </div>
-  </section>
+  <!-- Team Cards -->
+  <main class="p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="teamContainer">
 
-  <!-- CTA -->
-  <section class="bg-indigo-700 py-20 text-center text-white px-6">
-    <h3 class="text-3xl font-bold mb-4">Ready to streamline your finances?</h3>
-    <p class="mb-6">Sign up in minutes and experience the power of automation.</p>
-    <a href="#" class="bg-white text-indigo-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Get Started Now</a>
-  </section>
+    <!-- Arsenal -->
+    <div class="team-card bg-white rounded-xl shadow-md p-4">
+      <img src="https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg" alt="Arsenal Logo" class="h-16 mb-3">
+      <h2 class="team-name text-xl font-bold mb-1">Arsenal FC</h2>
+      <p><strong>Stadium:</strong> Emirates Stadium</p>
+      <p><strong>Manager:</strong> Mikel Arteta</p>
+      <a href="https://www.arsenal.com" class="text-indigo-600 hover:underline">Visit Website</a>
+    </div>
+
+    <!-- Manchester City -->
+    <div class="team-card bg-white rounded-xl shadow-md p-4">
+      <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg" alt="Man City Logo" class="h-16 mb-3">
+      <h2 class="team-name text-xl font-bold mb-1">Manchester City</h2>
+      <p><strong>Stadium:</strong> Etihad Stadium</p>
+      <p><strong>Manager:</strong> Pep Guardiola</p>
+      <a href="https://www.mancity.com" class="text-indigo-600 hover:underline">Visit Website</a>
+    </div>
+
+    <!-- Liverpool -->
+    <div class="team-card bg-white rounded-xl shadow-md p-4">
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg" alt="Liverpool Logo" class="h-16 mb-3">
+      <h2 class="team-name text-xl font-bold mb-1">Liverpool FC</h2>
+      <p><strong>Stadium:</strong> Anfield</p>
+      <p><strong>Manager:</strong> Arne Slot</p>
+      <a href="https://www.liverpoolfc.com" class="text-indigo-600 hover:underline">Visit Website</a>
+    </div>
+
+    <!-- Manchester United -->
+    <div class="team-card bg-white rounded-xl shadow-md p-4">
+      <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" alt="Man Utd Logo" class="h-16 mb-3">
+      <h2 class="team-name text-xl font-bold mb-1">Manchester United</h2>
+      <p><strong>Stadium:</strong> Old Trafford</p>
+      <p><strong>Manager:</strong> Erik ten Hag</p>
+      <a href="https://www.manutd.com" class="text-indigo-600 hover:underline">Visit Website</a>
+    </div>
+
+    <!-- Chelsea -->
+    <div class="team-card bg-white rounded-xl shadow-md p-4">
+      <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg" alt="Chelsea Logo" class="h-16 mb-3">
+      <h2 class="team-name text-xl font-bold mb-1">Chelsea FC</h2>
+      <p><strong>Stadium:</strong> Stamford Bridge</p>
+      <p><strong>Manager:</strong> Enzo Maresca</p>
+      <a href="https://www.chelseafc.com" class="text-indigo-600 hover:underline">Visit Website</a>
+    </div>
+
+    <!-- Tottenham -->
+    <div class="team-card bg-white rounded-xl shadow-md p-4">
+      <img src="https://upload.wikimedia.org/wikipedia/en/b/b4/Tottenham_Hotspur.svg" alt="Tottenham Logo" class="h-16 mb-3">
+      <h2 class="team-name text-xl font-bold mb-1">Tottenham Hotspur</h2>
+      <p><strong>Stadium:</strong> Tottenham Hotspur Stadium</p>
+      <p><strong>Manager:</strong> Ange Postecoglou</p>
+      <a href="https://www.tottenhamhotspur.com" class="text-indigo-600 hover:underline">Visit Website</a>
+    </div>
+
+  </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-100 text-center text-sm text-gray-500 py-6">
-    © 2025 FinTechFlow. All rights reserved.
+  <footer class="bg-gray-200 text-center text-sm text-gray-600 py-4 mt-10">
+    &copy; 2025 Premier League Fan Page
   </footer>
 
+  <!-- JavaScript: Search Filter -->
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const cards = document.querySelectorAll('.team-card');
+
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase();
+
+      cards.forEach(card => {
+        const name = card.querySelector('.team-name').textContent.toLowerCase();
+        card.style.display = name.includes(query) ? 'block' : 'none';
+      });
+    });
+  </script>
 </body>
 </html>
