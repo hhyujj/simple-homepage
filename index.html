@@ -14,93 +14,108 @@
 <body class="bg-gray-100 text-gray-800">
 
   <!-- Header -->
-  <header class="bg-purple-800 text-white text-center py-6 shadow-md">
-    <h1 class="text-3xl font-bold">Premier League Teams</h1>
-    <p class="text-sm mt-1">Season 2025</p>
+  <header class="bg-purple-700 text-white py-8 shadow-md">
+    <div class="max-w-7xl mx-auto text-center px-4">
+      <h1 class="text-4xl font-extrabold">Premier League Teams</h1>
+      <p class="mt-2 text-lg text-purple-200">Season 2025</p>
+    </div>
   </header>
 
-  <!-- Search Box -->
-  <div class="flex justify-center mt-8 mb-6 px-4">
+  <!-- Search -->
+  <div class="max-w-4xl mx-auto mt-10 px-4">
     <input 
       type="text" 
       id="searchInput" 
-      placeholder="Search by team name..." 
-      class="w-full max-w-md px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+      placeholder="🔍 Search by team name..." 
+      class="w-full px-5 py-3 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 text-lg"
     />
   </div>
 
   <!-- Team Cards -->
-  <main class="p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="teamContainer">
+  <main class="max-w-7xl mx-auto px-4 py-14">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10" id="teamContainer">
 
-    <!-- Arsenal -->
-    <div class="team-card bg-white rounded-xl shadow-md p-4">
-      <img src="https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg" alt="Arsenal Logo" class="h-16 mb-3">
-      <h2 class="team-name text-xl font-bold mb-1">Arsenal FC</h2>
-      <p><strong>Stadium:</strong> Emirates Stadium</p>
-      <p><strong>Manager:</strong> Mikel Arteta</p>
-      <a href="https://www.arsenal.com" class="text-indigo-600 hover:underline">Visit Website</a>
+      <!-- Arsenal -->
+      <div class="team-card bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg" alt="Arsenal Logo" class="h-20 mx-auto mb-4">
+        <h2 class="team-name text-2xl font-bold text-center mb-2">Arsenal FC</h2>
+        <p class="text-center text-gray-600 mb-1"><strong>Stadium:</strong> Emirates Stadium</p>
+        <p class="text-center text-gray-600 mb-3"><strong>Manager:</strong> Mikel Arteta</p>
+        <p class="text-center">
+          <a href="https://www.arsenal.com" target="_blank" class="text-purple-600 hover:underline">Visit Website</a>
+        </p>
+      </div>
+
+      <!-- Manchester City -->
+      <div class="team-card bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition">
+        <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg" alt="Man City Logo" class="h-20 mx-auto mb-4">
+        <h2 class="team-name text-2xl font-bold text-center mb-2">Manchester City</h2>
+        <p class="text-center text-gray-600 mb-1"><strong>Stadium:</strong> Etihad Stadium</p>
+        <p class="text-center text-gray-600 mb-3"><strong>Manager:</strong> Pep Guardiola</p>
+        <p class="text-center">
+          <a href="https://www.mancity.com" target="_blank" class="text-purple-600 hover:underline">Visit Website</a>
+        </p>
+      </div>
+
+      <!-- Liverpool -->
+      <div class="team-card bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg" alt="Liverpool Logo" class="h-20 mx-auto mb-4">
+        <h2 class="team-name text-2xl font-bold text-center mb-2">Liverpool FC</h2>
+        <p class="text-center text-gray-600 mb-1"><strong>Stadium:</strong> Anfield</p>
+        <p class="text-center text-gray-600 mb-3"><strong>Manager:</strong> Arne Slot</p>
+        <p class="text-center">
+          <a href="https://www.liverpoolfc.com" target="_blank" class="text-purple-600 hover:underline">Visit Website</a>
+        </p>
+      </div>
+
+      <!-- Manchester United -->
+      <div class="team-card bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition">
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" alt="Man Utd Logo" class="h-20 mx-auto mb-4">
+        <h2 class="team-name text-2xl font-bold text-center mb-2">Manchester United</h2>
+        <p class="text-center text-gray-600 mb-1"><strong>Stadium:</strong> Old Trafford</p>
+        <p class="text-center text-gray-600 mb-3"><strong>Manager:</strong> Erik ten Hag</p>
+        <p class="text-center">
+          <a href="https://www.manutd.com" target="_blank" class="text-purple-600 hover:underline">Visit Website</a>
+        </p>
+      </div>
+
+      <!-- Chelsea -->
+      <div class="team-card bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition">
+        <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg" alt="Chelsea Logo" class="h-20 mx-auto mb-4">
+        <h2 class="team-name text-2xl font-bold text-center mb-2">Chelsea FC</h2>
+        <p class="text-center text-gray-600 mb-1"><strong>Stadium:</strong> Stamford Bridge</p>
+        <p class="text-center text-gray-600 mb-3"><strong>Manager:</strong> Enzo Maresca</p>
+        <p class="text-center">
+          <a href="https://www.chelseafc.com" target="_blank" class="text-purple-600 hover:underline">Visit Website</a>
+        </p>
+      </div>
+
+      <!-- Tottenham -->
+      <div class="team-card bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition">
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/b4/Tottenham_Hotspur.svg" alt="Tottenham Logo" class="h-20 mx-auto mb-4">
+        <h2 class="team-name text-2xl font-bold text-center mb-2">Tottenham Hotspur</h2>
+        <p class="text-center text-gray-600 mb-1"><strong>Stadium:</strong> Tottenham Hotspur Stadium</p>
+        <p class="text-center text-gray-600 mb-3"><strong>Manager:</strong> Ange Postecoglou</p>
+        <p class="text-center">
+          <a href="https://www.tottenhamhotspur.com" target="_blank" class="text-purple-600 hover:underline">Visit Website</a>
+        </p>
+      </div>
+
     </div>
-
-    <!-- Manchester City -->
-    <div class="team-card bg-white rounded-xl shadow-md p-4">
-      <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg" alt="Man City Logo" class="h-16 mb-3">
-      <h2 class="team-name text-xl font-bold mb-1">Manchester City</h2>
-      <p><strong>Stadium:</strong> Etihad Stadium</p>
-      <p><strong>Manager:</strong> Pep Guardiola</p>
-      <a href="https://www.mancity.com" class="text-indigo-600 hover:underline">Visit Website</a>
-    </div>
-
-    <!-- Liverpool -->
-    <div class="team-card bg-white rounded-xl shadow-md p-4">
-      <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg" alt="Liverpool Logo" class="h-16 mb-3">
-      <h2 class="team-name text-xl font-bold mb-1">Liverpool FC</h2>
-      <p><strong>Stadium:</strong> Anfield</p>
-      <p><strong>Manager:</strong> Arne Slot</p>
-      <a href="https://www.liverpoolfc.com" class="text-indigo-600 hover:underline">Visit Website</a>
-    </div>
-
-    <!-- Manchester United -->
-    <div class="team-card bg-white rounded-xl shadow-md p-4">
-      <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" alt="Man Utd Logo" class="h-16 mb-3">
-      <h2 class="team-name text-xl font-bold mb-1">Manchester United</h2>
-      <p><strong>Stadium:</strong> Old Trafford</p>
-      <p><strong>Manager:</strong> Erik ten Hag</p>
-      <a href="https://www.manutd.com" class="text-indigo-600 hover:underline">Visit Website</a>
-    </div>
-
-    <!-- Chelsea -->
-    <div class="team-card bg-white rounded-xl shadow-md p-4">
-      <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg" alt="Chelsea Logo" class="h-16 mb-3">
-      <h2 class="team-name text-xl font-bold mb-1">Chelsea FC</h2>
-      <p><strong>Stadium:</strong> Stamford Bridge</p>
-      <p><strong>Manager:</strong> Enzo Maresca</p>
-      <a href="https://www.chelseafc.com" class="text-indigo-600 hover:underline">Visit Website</a>
-    </div>
-
-    <!-- Tottenham -->
-    <div class="team-card bg-white rounded-xl shadow-md p-4">
-      <img src="https://upload.wikimedia.org/wikipedia/en/b/b4/Tottenham_Hotspur.svg" alt="Tottenham Logo" class="h-16 mb-3">
-      <h2 class="team-name text-xl font-bold mb-1">Tottenham Hotspur</h2>
-      <p><strong>Stadium:</strong> Tottenham Hotspur Stadium</p>
-      <p><strong>Manager:</strong> Ange Postecoglou</p>
-      <a href="https://www.tottenhamhotspur.com" class="text-indigo-600 hover:underline">Visit Website</a>
-    </div>
-
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-200 text-center text-sm text-gray-600 py-4 mt-10">
+  <footer class="bg-gray-200 text-center text-sm text-gray-600 py-6">
     &copy; 2025 Premier League Fan Page
   </footer>
 
-  <!-- JavaScript: Search Filter -->
+  <!-- JS: Search -->
   <script>
     const searchInput = document.getElementById('searchInput');
     const cards = document.querySelectorAll('.team-card');
 
     searchInput.addEventListener('input', () => {
       const query = searchInput.value.toLowerCase();
-
       cards.forEach(card => {
         const name = card.querySelector('.team-name').textContent.toLowerCase();
         card.style.display = name.includes(query) ? 'block' : 'none';
